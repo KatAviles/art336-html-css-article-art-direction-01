@@ -15,6 +15,17 @@ Module Rules
     //text-decoration: none;
 //}
 
+a {
+    color: #fff;
+    text-decoration: none;
+    @include body-font-italic;
+}
+
+a:hover {
+    color: darken($color, 30%);
+    transition: color 400ms linear;
+}
+
 nav[role="navigation"] ul {
     background-color: #892730;
     list-style-type: none;
@@ -73,24 +84,38 @@ header[role="banner"] a:hover {
 }
 
 .contact svg {
-    width: 24px;
-    height: 24px;
+    width: 27px;
+    height: 27px;
 }
 
 .contact svg path { 
-    fill: $background-color;
+    fill: #fff;
     transition: fill 400ms linear;
 }
 
 .contact a:hover svg path { 
-    fill: darken($background-color, 12%);
+    fill: lighten($background-color, 12%);
     transition: fill 400ms linear;
+}
+
+.callbacks {
+
+}
+
+.rslides {
+    list-style: none;
 }
 
 main[role="main"] h1 {
     background-color: $color;
     color: $background-color;
     padding: 0 8px;
+}
+
+ul ol {
+    background-color: #000;
+    padding: 10px;
+    margin-left: 0 10px;
 }
 
 //footer[role="contentinfo"] {

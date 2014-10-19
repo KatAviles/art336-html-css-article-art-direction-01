@@ -14,10 +14,10 @@ nav[role="navigation"] ul, .contact ul {
     padding: 0;
 }
 
-//nav[role="navigation"] ul {
-//    margin:0;
-    //margin-top: 12px;
-//}
+nav[role="navigation"] ul {
+    margin:0;
+    margin-top: 12px;
+}
 
 nav[role="navigation"] ul li, .contact ul li {
     display: inline-block;
@@ -39,7 +39,7 @@ header[role="banner"] {
 
 //main[role="main"] {
     //@media (min-width: 700px) {
-        //float: right;
+       // float: right;
         //width: 60%;
     //}
 //}
