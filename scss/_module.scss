@@ -3,3 +3,99 @@ Module Rules
     A Module is a more discrete component of the page. It is your navigation bars and your carousels and your dialogs and your widgets and so on. This is the meat of the page. Modules sit inside Layout components. Modules can sometimes sit within other Modules, too. Each Module should be designed to exist as a standalone component. In doing so, the page will be more flexible. If done right, Modules can easily be moved to different parts of the layout without breaking.
     When defining the rule set for a module, avoid using IDs and element selectors, sticking only to class names. A module will likely contain a number of elements and there is likely to be a desire to use descendent or child selectors to target those elements. 
 */
+
+
+//.toggle-button {
+  //  background-color: $color;
+    //color: $background-color;
+    //display: inline-block;
+    //@include headline-font;
+    //@include fontSize(20px);
+    //padding: 5px;
+    //text-decoration: none;
+//}
+
+nav[role="navigation"] ul {
+    background-color: #892730;
+    list-style-type: none;
+    margin-top: 0;
+}
+
+nav[role="navigation"] ul a {
+    //border: 1px solid $color;
+    color: $color;
+    display: inline-block;
+    @include fontSize(16px);
+    @include body-font-regular;
+    margin-left: 8px;
+    padding: 0px 4px;
+    text-decoration: none;
+    transition: border 400ms linear;
+    transition: color 400ms linear;
+}
+
+nav[role="navigation"] ul a:hover {
+    //border: 1px solid darken($color, 20%);
+    @include body-font-bold;
+    color: darken($color, 30%);
+    transition: border 400ms linear;
+    transition: color 400ms linear;
+}
+
+header[role="banner"] {
+    background-color: $banner-color;
+    color: $background-color;
+    padding: 12px;
+}
+
+header[role="banner"] h1 {
+    color: $color;
+}
+
+header[role="banner"] img { 
+    //border-radius: 99%; //circle
+    width: 70%;
+}
+
+header[role="banner"] p {
+    @include fontSize(23px);
+}
+
+header[role="banner"] a {
+    color: $background-color;
+    @include body-font-italic;
+    transition: color 400ms linear;
+}
+
+header[role="banner"] a:hover {
+    color: darken($background-color, 12%);
+    transition: color 400ms linear;
+}
+
+.contact svg {
+    width: 24px;
+    height: 24px;
+}
+
+.contact svg path { 
+    fill: $background-color;
+    transition: fill 400ms linear;
+}
+
+.contact a:hover svg path { 
+    fill: darken($background-color, 12%);
+    transition: fill 400ms linear;
+}
+
+main[role="main"] h1 {
+    background-color: $color;
+    color: $background-color;
+    padding: 0 8px;
+}
+
+//footer[role="contentinfo"] {
+    //@include body-font-italic;
+    //line-height: 1;
+    //padding: 4px 8px 8px 8px;
+//}
+

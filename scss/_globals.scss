@@ -14,3 +14,37 @@ Globals
     font-size: $size;
     font-size: calculateRem($size);
 }
+
+@mixin fontSize($size) {
+    font-size: $size;
+    font-size: calculateRem($size);
+}
+
+@mixin body-font-regular {
+    font-family: "freight-sans-pro",sans-serif;
+    font-style: normal;
+    font-weight: 300;
+}
+
+@mixin body-font-italic {
+    font-family: "freight-sans-pro",sans-serif;
+    font-style: italic;
+    font-weight: 300;
+}
+
+@mixin body-font-bold {
+    font-family: "freight-sans-pro",sans-serif;
+    font-style: normal;
+    font-weight: 700;
+}
+
+@mixin headline-font {
+    font-family: "jeanne-moderno-geometrique",sans-serif;
+    font-style: normal;
+    font-weight: 600;
+}
+
+// Site Variable
+$color: #e8e8e8;
+$background-color: #434343;
+$banner-color: #000;
