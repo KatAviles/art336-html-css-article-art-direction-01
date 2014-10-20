@@ -82,10 +82,13 @@ header[role="banner"] a:hover {
     color: darken($background-color, 12%);
     transition: color 400ms linear;
 }
+.contact {
+    text-align: center;
+}
 
 .contact svg {
-    width: 27px;
-    height: 27px;
+    width: 22px;
+    height: 22px;
 }
 
 .contact svg path { 
@@ -96,10 +99,6 @@ header[role="banner"] a:hover {
 .contact a:hover svg path { 
     fill: lighten($background-color, 12%);
     transition: fill 400ms linear;
-}
-
-.callbacks {
-
 }
 
 .rslides {
@@ -118,9 +117,9 @@ ul ol {
     margin-left: 0 10px;
 }
 
-//footer[role="contentinfo"] {
-    //@include body-font-italic;
-    //line-height: 1;
-    //padding: 4px 8px 8px 8px;
-//}
+footer[role="contentinfo"] {
+    @include body-font-italic;
+    line-height: 1;
+    padding: 4px 8px 8px 8px;
+}
 
