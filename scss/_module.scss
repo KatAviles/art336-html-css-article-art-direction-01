@@ -4,17 +4,6 @@ Module Rules
     When defining the rule set for a module, avoid using IDs and element selectors, sticking only to class names. A module will likely contain a number of elements and there is likely to be a desire to use descendent or child selectors to target those elements. 
 */
 
-
-//.toggle-button {
-  //  background-color: $color;
-    //color: $background-color;
-    //display: inline-block;
-    //@include headline-font;
-    //@include fontSize(20px);
-    //padding: 5px;
-    //text-decoration: none;
-//}
-
 a {
     color: #fff;
     text-decoration: none;
@@ -41,15 +30,12 @@ nav[role="navigation"] ul a {
     margin-left: 8px;
     padding: 0px 4px;
     text-decoration: none;
-    transition: border 400ms linear;
     transition: color 400ms linear;
 }
 
 nav[role="navigation"] ul a:hover {
-    //border: 1px solid darken($color, 20%);
     @include body-font-bold;
     color: darken($color, 30%);
-    transition: border 400ms linear;
     transition: color 400ms linear;
 }
 
@@ -57,6 +43,7 @@ header[role="banner"] {
     background-color: $banner-color;
     color: $background-color;
     padding: 12px;
+    margin-top: 0;
 }
 
 header[role="banner"] h1 {
@@ -64,8 +51,8 @@ header[role="banner"] h1 {
 }
 
 header[role="banner"] img { 
-    //border-radius: 99%; //circle
     width: 70%;
+    
 }
 
 header[role="banner"] p {
@@ -82,10 +69,6 @@ header[role="banner"] a:hover {
     color: darken($background-color, 12%);
     transition: color 400ms linear;
 }
-
-//.contact {
-  //  text-align: center;
-//}
 
 .contact svg {
     width: 22px;
@@ -109,14 +92,5 @@ main[role="main"] h1 {
 }
 
 ul ol {
-    background-color: #000;
     padding: 10px;
-    margin-left: 0 10px;
 }
-
-footer[role="contentinfo"] {
-    @include body-font-italic;
-    line-height: 1;
-    padding: 4px 8px 8px 8px;
-}
-
