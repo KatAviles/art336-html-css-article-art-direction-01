@@ -36,17 +36,23 @@ header[role="banner"] {
 .banner-photo {
     text-align: center;
 }
-//this stupid thing not working no idea
-//main[role="main"] {
-    //@media (min-width: 700px) {
-       // float: right;
-       // width: 60%;
-    //}
-//}
 
-//footer[role="contentinfo"] {
-    //@media (min-width: 700px) {
-        //float: left;
-        //width: 100%;
-    //}
-//}
+ul li {
+    list-style: none;
+}
+
+.caption {
+    @include fontSize(10px);
+    background-color: #000;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 5px;
+    text-align: right;
+}
+
+h2 {
+    @include fontSize(30px);
+    background-color: #272525;
+    padding: 10px;
+    text-align: right;
+}
