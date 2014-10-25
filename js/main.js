@@ -16,25 +16,14 @@ $(function() {
 
 
 // bigtext.js
-$(function() {
-    WebFont.load({
-        custom: {
-            families: ['Yanone Kaffeesatz'], // font-family name
-            urls : ['css/main.css'] // URL to css
-        },
-        active: function() {
-            $('#bigtext').bigtext();
-        }
-    });
-});
-
-// initialize responsiveslides.js
-$(function () {
-    $(".slider").responsiveSlides({
-        auto: false,
-        pager: false,
-        nav: true,
-        speed: 500,
-        namespace: "callbacks"
-    });
-});
+//$(function() {
+    //WebFont.load({
+      //  custom: {
+        //    families: ['Yanone Kaffeesatz'], // font-family name
+          //  urls : ['css/main.css'] // URL to css
+        //},
+        //active: function() {
+          //  $('#bigtext').bigtext();
+        //}
+    //});
+//});
