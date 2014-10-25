@@ -82,9 +82,10 @@ header[role="banner"] a:hover {
     color: darken($background-color, 12%);
     transition: color 400ms linear;
 }
-.contact {
-    text-align: center;
-}
+
+//.contact {
+  //  text-align: center;
+//}
 
 .contact svg {
     width: 22px;
@@ -99,10 +100,6 @@ header[role="banner"] a:hover {
 .contact a:hover svg path { 
     fill: lighten($background-color, 12%);
     transition: fill 400ms linear;
-}
-
-.rslides {
-    list-style: none;
 }
 
 main[role="main"] h1 {
